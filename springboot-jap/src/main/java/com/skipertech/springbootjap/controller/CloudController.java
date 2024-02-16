@@ -16,7 +16,7 @@ public class CloudController {
     private final CloudService cloudService;
 
     @GetMapping("/vendor/{vendorId}")
-    public CloudVender getCloudvender(@PathVariable String vendorId) {
+    public CloudVender getCloudvender(@PathVariable String vendorId)  {
 
 
         return cloudService.fetchCloudVendor(vendorId);
